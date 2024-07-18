@@ -60,24 +60,24 @@
 		printf("hi");*/
 	/*int age = 10;
 	if (age > 18)
-		printf("成年\n");
+		printf("鎴愬勾\n");
 	else
 	{
-		printf("未成年\n");
-		printf("不能饮酒\n");
+		printf("鏈垚骞碶n");
+		printf("涓嶈兘楗厭\n");
 	}*/
 	/*int age = 10;
 	scanf("%d", &age);
 	if (age < 18)
-		printf("青少年\n");
+		printf("闈掑皯骞碶n");
 	else if (age >= 18 && age < 28)
-		printf("青年\n");
+		printf("闈掑勾\n");
 	else if (age >= 28 && age < 40)
-		printf("中年\n");
+		printf("涓勾\n");
 	else if (age >= 40 && age < 60)
-		printf("壮年");
+		printf("澹勾");
 	else
-		printf("老年");
+		printf("鑰佸勾");
 
 	return 0;
 }*/

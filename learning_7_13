@@ -5,17 +5,17 @@
 //int main()
 //{
 //	int a = 0;
-//	printf("ÒªºÃºÃÑ§Ï°Âğ(1/0)");
+//	printf("è¦å¥½å¥½å­¦ä¹ å—(1/0)");
 //	scanf("%d", &a);
 //	if (a == 1)
 //	{
 //
 //
-//		printf("ºÃ");
+//		printf("å¥½");
 //	}
 //	else
 //	{
-//		printf("²»ºÃ");
+//		printf("ä¸å¥½");
 //	}
 //
 //	return 0;
@@ -24,11 +24,11 @@
 //int main()
 //{
 //	int line = 0;
-//	printf("¼ÓÈëÒ¯\n");
+//	printf("åŠ å…¥çˆ·\n");
 //
 //	while (line<20000)
 //	{
-//		printf("Ğ´´úÂë;%d\n",line);
+//		printf("å†™ä»£ç ;%d\n",line);
 //		line++;
 //	}
 //	if (line == 20000) {
@@ -62,11 +62,11 @@
 	//printf("%d\n",sum);
 //}
 
-// printf("Ğ´´úÂë");
-//line++; printf("Ğ´´úÂë");
-//line++; printf("Ğ´´úÂë");
-//line++printf("Ğ´´úÂë");
-//line++; printf("Ğ´´úÂë");
+// printf("å†™ä»£ç ");
+//line++; printf("å†™ä»£ç ");
+//line++; printf("å†™ä»£ç ");
+//line++printf("å†™ä»£ç ");
+//line++; printf("å†™ä»£ç ");
 //line++;v
 
 

@@ -31,7 +31,7 @@
 //	int a = 0;
 //	scanf("%d", &a);
 //	if (a % 2 == 1)
-//		printf("ÆæÊý");
+//		printf("å¥‡æ•°");
 //	else
 //		printf("no\n");
 //}
@@ -53,17 +53,17 @@
 //	int day = 0;
 //	scanf("%d\n", &day);
 //	//if (1 == day)
-//		//printf("ÐÇÆÚ1");
+//		//printf("æ˜ŸæœŸ1");
 //	switch (day)
 //	{
 //	case 1:
-//		printf("ÐÇÆÚÒ»\n");
+//		printf("æ˜ŸæœŸä¸€\n");
 //		break;
 //	case 2:
-//		printf("ÐÇÆÚ¶þ\n");
+//		printf("æ˜ŸæœŸäºŒ\n");
 //		break;
 //	case 3:
-//		printf("ÐÇÆÚÈý");
+//		printf("æ˜ŸæœŸä¸‰");
 //		break;
 //
 //	}
@@ -88,7 +88,7 @@
 //		printf("weekend");
 //		break;
 //	default:
-//		printf("Ñ¡Ôñ´íÎó");
+//		printf("é€‰æ‹©é”™è¯¯");
 //		break;
 //
 //	}

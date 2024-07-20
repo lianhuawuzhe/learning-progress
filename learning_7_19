@@ -17,14 +17,14 @@
 
 //	
 //char password[20] = { 0 };
-//printf("ÇëÊäÈëÃÜÂë£º>");
+//printf("è¯·è¾“å…¥å¯†ç ï¼š>");
 //scanf("%s", password);
 //int ch = 0;
 //while ((ch = getchar()) != '\n')
 //{
 //	;
 //}
-//printf("ÇëÈ·ÈÏÃÜÂë(Y\N£º>");
+//printf("è¯·ç¡®è®¤å¯†ç (Y\Nï¼š>");
 ////getchar();
 //int ret = getchar();
 //if ('Y' == ret)

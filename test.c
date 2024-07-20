@@ -1,0 +1,206 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+//int main()
+//{
+	//int ch = 0;
+	//while (getchar())
+	//EOF;
+	//int ch = getchar();
+	//printf("%c\n", ch);
+	//putchar(ch);
+
+	/*int ch = 0;
+	while ((ch = getchar()) != EOF)
+	{
+		putchar(ch);
+	}*/
+
+//	
+//char password[20] = { 0 };
+//printf("ÇëÊäÈëÃÜÂë£º>");
+//scanf("%s", password);
+//int ch = 0;
+//while ((ch = getchar()) != '\n')
+//{
+//	;
+//}
+//printf("ÇëÈ·ÈÏÃÜÂë(Y\N£º>");
+////getchar();
+//int ret = getchar();
+//if ('Y' == ret)
+//
+//printf("yes\n");
+//else
+//printf("no\n");
+//
+//return 0;
+//}
+
+//int main()
+//{
+//	char ch = '\0';
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch>'9')
+//			continue;
+//		putchar(ch);
+//	}
+//}
+
+//int main()
+//{
+//	int arr[] = { 74,78,38,33 ,67};
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	while (i < sz)
+//	{
+//		printf("%c", arr[i]);
+//		i++;
+//	}
+//  return 0;
+//}
+//
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	int date = 0;
+//	scanf("%4d%2d%2d",&year, &month,&date);
+//
+//	printf("year=%4d\n", year);
+//	printf("month=%02d\n", month);
+//	printf("date=%02d\n", date);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int id = 0;
+//	float c = 0.0f;
+//	float math = 0.0f;
+//	float english = 0.0f;
+//	scanf("%d;%f,%f,%f", &id, &c, &math, &english);
+//	printf("The each subject score of No.%d is .2%f, .2%f, .2%f",id,c,math,english);
+//
+//
+//	return 0;
+//}
+//int nain()
+//{
+//	int n = printf("hello world!");
+//	printf("%d\n", n);
+//
+//	return 0;
+//
+//}
+
+//int sum(int a)
+//{
+//	int c = 0;
+//	static int b = 3;
+//	c += 1;
+//	b += 2;
+//	return (a + b + c);
+//}
+//
+//int main()
+//{
+//	int i;
+//	int a = 2;
+//	for (i = 0; i < 5; i++)
+//	{
+//		printf("%d", sum(a));
+//
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	printf("printf(\"hello world!\\n\"); \n");
+//	printf("cout<<\"hello world!\"<<endl;\n");
+//	return 0;
+//
+
+
+//int main()
+//{
+//	int arr[4] = { 0 };
+//	int i = 0;
+//	while (i < 4)
+//	{
+//		scanf("%d", &arr[i]);
+//		i++;
+//	}
+//	int max = arr[0];
+//	i = 1;
+//	while(i<4)
+//	{
+//		if (arr[i] > max)
+//		{
+//			max = arr[i];
+//		}
+//		i++;
+//	}
+//	printf("%d\n", max);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 1;
+//	int n = 0;
+//	int max = 0;
+//	scanf("%d", &max);
+//	while (i < 4)
+//	{
+//		scanf("%d", &n);
+//		if (n > max)
+//			max = n;
+//		i++;
+//	}
+//	printf("%d\n", max);
+//	return 0;
+//}
+
+//int main()
+//{
+//	float n = 0.0f;
+//	float v = 0.0f;
+//	scanf("%f", &n);
+//	v = 4 / 3.0 * 3.1415925 * n * n * n;
+//
+//	printf("%.3f\n", v);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int weight = 0;
+//	int high = 0;
+//	scanf("%d %d", &weight, &high);
+//	float BMI = weight / (high / 100.0) / (high / 100.0);
+//	printf("%.2f\n", BMI);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 10)
+//	{
+//		printf("%d", i);
+//		i++;
+//	}
+//	return 0;
+//}
+
+int main()
+{
+	for (int i = 1; i <= 10; i++)
+	{
+		printf("%d\n", i);
+		printf("hi\n");
+	}
+	return 0;
+}

@@ -136,12 +136,12 @@
 //	{
 //		if (arr[i] == k)
 //		{
-//			printf("找到了，下标是:%d\n",i);
+//			printf("脮脪碌陆脕脣拢卢脧脗卤锚脢脟:%d\n",i);
 //			break;
 //		}
 //	}
 //	if (i == sz)
-//		printf("找不到");
+//		printf("脮脪虏禄碌陆");
 //
 //	return 0;
 //}

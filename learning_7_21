@@ -25,14 +25,14 @@
 //			right = mid - 1;
 //		}
 //		else
-//		{	printf("ÕÒµ½ÁË£¬ÏÂ±êÊÇÊÇ:%d\n", mid);
+//		{	printf("æ‰¾åˆ°äº†ï¼Œä¸‹æ ‡æ˜¯æ˜¯:%d\n", mid);
 //			break;
 //		}
 //
 //	}
 //	if (left > right)
 //	{
-//		printf("ÕÒ²»µ½");
+//		printf("æ‰¾ä¸åˆ°");
 //	}
 //
 //	return 0;
@@ -65,19 +65,19 @@
 //	char password[20] = {0};
 //	for (i = 0; i < 3; i++)
 //	{
-//		printf("ÇëÊäÈëÃÜÂë:>");
+//		printf("è¯·è¾“å…¥å¯†ç :>");
 //		scanf("%s", password);
 //		if (strcmp(password , "abcdef")==0)
 //		{
-//			printf("µÇÂ¼³É¹¦\n");
+//			printf("ç™»å½•æˆåŠŸ\n");
 //			break;
 //		}
 //		else
-//			printf("ÃÜÂë´íÎó\n");
+//			printf("å¯†ç é”™è¯¯\n");
 //	}
 //	if (i == 3)
 //	{
-//		printf("ÍË³ö³ÌĞò\n");
+//		printf("é€€å‡ºç¨‹åº\n");
 //	}
 //	return 0;
 //}

@@ -33,19 +33,19 @@ void game()
 	
 	while (1)
 	{
-		printf("Çë²ÂÊý×Ö\n");
+		printf("è¯·çŒœæ•°å­—\n");
 		scanf("%d", &guess);
 		if (guess < ret)
 		{
-			printf("²ÂÐ¡ÁË\n");
+			printf("çŒœå°äº†\n");
 		}
 		else if (guess > ret)
 		{
-			printf("²Â´óÁË\n");
+			printf("çŒœå¤§äº†\n");
 		}
 		else
 		{
-			printf("²Â¶ÔÁË\n");
+			printf("çŒœå¯¹äº†\n");
 			break;
 		}
 	}
@@ -59,19 +59,19 @@ int main()
 	do
 	{
 		menu();
-		printf("ÇëÑ¡Ôñ;>");
+		printf("è¯·é€‰æ‹©;>");
 		scanf("%d", &input);
 		switch (input)
 		{
 		case 1:
 			game();
-			printf("²ÂÊý×Ö\n");
+			printf("çŒœæ•°å­—\n");
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·\n");
+			printf("é€€å‡ºæ¸¸æˆ\n");
 			break;
 		default:
-			printf("Ñ¡Ôñ´íÎó£¬ÖØÐÂÑ¡Ôñ");
+			printf("é€‰æ‹©é”™è¯¯ï¼Œé‡æ–°é€‰æ‹©");
 			break;
 		}
 	} while (input);

@@ -18,9 +18,9 @@
 ////again:
 //	while (1)
 //	{
-//		printf("Èç¹ûÊäÈë:ÎÒÊÇÖí£¬¿ÉÈ¡Ïû¹Ø»ú\n");
+//		printf("å¦‚æœè¾“å…¥:æˆ‘æ˜¯çŒªï¼Œå¯å–æ¶ˆå…³æœº\n");
 //		scanf("%s", input);
-//		if (strcmp(input, "ÎÒÊÇÖí") == 0)
+//		if (strcmp(input, "æˆ‘æ˜¯çŒª") == 0)
 //		{
 //			system("shutdown -a");
 //			break;

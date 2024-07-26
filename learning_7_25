@@ -30,7 +30,7 @@
 //}
 
 //
-//void Swap(int x,int y)  //´íÎó´úÂë
+//void Swap(int x,int y)  //Â´Ã­ÃŽÃ³Â´ÃºÃ‚Ã«
 //{
 //	int z = 0;
 //	z = x;
@@ -39,7 +39,7 @@
 //}
 
 
-//void Swap(int *px, int *py)  //´íÎó´úÂë
+//void Swap(int *px, int *py)  //Â´Ã­ÃŽÃ³Â´ÃºÃ‚Ã«
 //{
 //	int z = *px;
 //	*px = *py;
@@ -52,9 +52,9 @@
 //	int a = 0;
 //	int b = 0;
 //	scanf("%d %d", &a, &b);
-//	printf("½»»»Ç°:a=%d,b=%d\n", b, a);
+//	printf("Â½Â»Â»Â»Ã‡Â°:a=%d,b=%d\n", b, a);
 //	Swap(&a, &b);
-//	printf("½»»»ºó:a=%d,b=%d\n", b, a);
+//	printf("Â½Â»Â»Â»ÂºÃ³:a=%d,b=%d\n", b, a);
 //
 //	return 0;
 //}

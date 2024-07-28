@@ -1,0 +1,103 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdbool.h>
+#include <math.h>
+//int binary_search(int arr[], int k, int sz)
+//{
+//	int left = 0;
+//	int right = sz - 1;
+//	
+//	while (left<=right)
+//	{  
+//		int mid = left + (right - left) / 2;
+//		if (arr[mid] < k)
+//		{
+//			left = mid + 1;
+//		}
+//		else if (arr[mid] > k)
+//		{
+//			right = mid - 1;
+//		}
+//		else
+//		{
+//			return mid;
+//		}
+//	}
+//	return -1;
+//}
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//
+//	int k = 7;
+//	int ret=binary_search(arr,k,sz);
+//	if (ret == -1)
+//	{
+//		printf("找不到\n");
+//	}
+//	else
+//	{
+//		printf("找到了，下标是:%d\n",ret);
+//	}
+//	return 0;
+//}
+
+//void test(int m)
+//{
+//
+//}
+//int main()
+//{
+//	int n = 10;
+//	test(n);
+//	return 0;
+////}
+//bool test(int n)
+//{
+//	int j = 0;
+//	for (j = 2; j <= sqrt(n); j++)
+//	{
+//		if (n % j == 0)
+//			return false;
+//	}
+//	return true;
+//}
+//
+//int main()
+//{
+//	/*int i = 0;
+//	for (i == 100; i <= 200; i++)
+//	{
+//		if (test(i))
+//			printf("%d ", i);
+//	}*/
+//	printf("%d\n", sizeof(bool));
+//
+//	return 0;
+//}
+
+//void Add(int* p)
+//{
+//	(*p)++;
+//}
+
+
+int Add(int n)
+{
+	return n + 1;
+}
+
+int main()
+{
+	int num = 0;
+	num = Add(num);
+	Add(&num);
+	printf("%d\n", num);
+	Add(&num);
+	printf("%d\n", num);
+	Add(&num);
+	printf("%d\n", num);
+	return 0;
+}

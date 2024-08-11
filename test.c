@@ -1,0 +1,187 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<math.h>
+//int fib(int n)
+//{
+//	if (n<=2)
+//		return n;
+//	else
+//		return fib(n - 1) + fib(n - 2);
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = fib(n);
+//	printf("%d", ret);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[50];
+//	int i = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	int del = 0;
+//	scanf("%d", &del);
+//	int j = 0;
+//	for (i = 0; i < n; i++)
+//	{
+//		if (arr[i] != del)
+//		{
+//			arr[j++] = arr[i];
+//		}
+//	}
+//	for (i = 0; i < j; i++)
+//	{
+//		printf("%d", arr[i]);
+//	}
+//
+//	return 0;
+//}
+
+/*int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+	int arr[10000];
+	int i = 0;
+	for (i = 0; i < n; i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	int max = arr[0];
+	for (i = 1; i < n; i++)
+	{
+		*//*if (arr[i] > max)
+			max = arr[i];
+
+	}
+	int min = arr[i];
+	for (i = 0; i < n; i++)
+		min = arr[i];
+	printf("%d", max - min);
+	return 0;
+}*/
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[10000];
+//	int i = 0;
+//	int max = 0;
+//	int min = 100;
+//
+//	for (i = 0; i < n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//		if (arr[i] > max)
+//			max = arr[i];
+//		if(arr[i]<min)
+//			min = arr[i];
+//	}
+//		
+//	printf("%d", max - min);
+//	return 0;
+//}
+//int main()
+//{
+//	char ch = 0;
+//	while (scanf("%c", &ch) == 1)
+//	{
+//		if (ch >= 'a' && ch <= 'z')
+//			printf("%c\n", ch - 32);
+//		else
+//			printf("%c\n", ch + 32);
+//		getchar();
+//	}
+//	
+//	return 0;
+//}
+
+//int main()
+//{
+//	char ch = 0;
+//	while (scanf("%c", &ch) == 1)
+//	{
+//		if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+//			printf("yes");
+//		else
+//			printf("no");
+//		getchar();
+//	}
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//	int max = 0;
+//	int score = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		scanf("%d", &score);
+//		if (score > max)
+//			max = score;
+//
+//	}
+//	printf("%d", max);
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//
+//	for (i = 10000; i <= 99999; i++)
+//	{
+//
+//		int sum = 0;
+//		int j = 0;
+//		for (j = 1; j <= 4; j++)
+//		{
+//			int k=(int)pow(10, j);
+//			sum += (i % k) * (i / k);
+//		}
+//		if (sum == i)
+//			printf("%d ", i);
+//	}
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int* pa = &a;
+//
+//	return 0;
+//}
+//int main()
+//{
+//	char* pc = NULL;
+//	short* ps = NULL;
+//	int* pi = NULL;
+//	double* pd = NULL;
+//	printf("%d\n", sizeof(pc));
+//	printf("%d\n", sizeof(ps));
+//	printf("%d\n", sizeof(pi));
+//	printf("%d\n", sizeof(pi));
+//	return 0;
+//}
+int main()
+{
+	int a = 0x11223344;
+	//int*pa=&a;
+	//*pa = 0;
+	char* pc =(char*) & a;
+	int* pa = &a;
+	//*pc = 0;
+	printf("pa+1=%p\n", pa + 1);
+	printf("pc+1=%p\n", pc + 1);
+	return 0;
+}

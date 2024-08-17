@@ -1,0 +1,96 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<assert.h>
+//void reverse(char* left, char* right)
+//{
+//	assert(left);
+//	assert(right);
+//	while (left < right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = *left;
+//		left++;
+//		right--;
+//	}
+//}
+//int main()
+//{
+//	char arr[101] = { 0 };
+//	gets(arr);
+//	/*int left = 0;
+//	int right=sizeof*/
+//	int len = strlen(arr);
+//	reverse(arr, arr + len - 1);
+//	char* start = arr;
+//	while (*start)
+//	{
+//		char* end = start;
+//		while (*end != ' '&&*end!='\0')
+//		{
+//			end++;
+//		}
+//		reverse(start, end - 1);
+//		if(*end!='\0')
+//			end++;
+//		start = end;
+//	}
+//	printf("%s\n", arr);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	printf("%p\n", arr);
+//	printf("%p\n", &i);
+//	/*for (i = 0; i <= 12; i++)
+//	{
+//		arr[i] = 0;
+//		printf("hehe\n");
+//	}*/
+//	return 0;
+//}
+//int main()
+//{
+//	while (1)
+//	{
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 10;
+//	//0000000000000000000000000001010
+//	//0x00 00 00 14
+//	int b = -10;
+//	//1000000000000000000000000001010
+//	//0x80 00 00 0a
+//	//1111111111111111111111111110101
+//	// 0xff ff ff f5
+//	//1111111111111111111111111110110
+//	//0xff ff ff f6
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 1;
+//	if (*(char*)&a==1)
+//	{
+//		printf("Ð¡¶Ë");
+//	}
+//	else
+//	{
+//		printf("´ó¶Ë");
+//	}
+//	return 0;
+//}
+
+int main()
+{
+	char a = -1;
+
+	return 0;
+}

@@ -221,41 +221,41 @@ int main()
 	do
 	{
 		menu();
-		printf("请选择:\n");
+		printf("璇烽�夋嫨:\n");
 		scanf("%d", &input);
 		
 		switch (input)
 		{
 			
 		case 1:
-			printf("请输入两个操作数:\n");
+			printf("璇疯緭鍏ヤ袱涓搷浣滄暟:\n");
 			scanf("%d %d", &x, &y);
 			ret = add(x, y);
 			printf("%d\n", ret);
 			break;
 		case 2:
-			printf("请输入两个操作数:\n");
+			printf("璇疯緭鍏ヤ袱涓搷浣滄暟:\n");
 			scanf("%d %d", &x, &y);
 			ret = sub(x, y);
 			printf("%d\n", ret);
 			break;
 		case 3:
-			printf("请输入两个操作数:\n");
+			printf("璇疯緭鍏ヤ袱涓搷浣滄暟:\n");
 			scanf("%d %d", &x, &y);
 			ret = mul(x, y);
 			printf("%d\n", ret);
 			break;
 		case 4:
-			printf("请输入两个操作数:\n");
+			printf("璇疯緭鍏ヤ袱涓搷浣滄暟:\n");
 			scanf("%d %d", &x, &y);
 			ret = div(x, y);
 			printf("%d\n", ret);
 			break;
 		case 0:
-			printf("退出计算器\n");
+			printf("閫�鍑鸿绠楀櫒\n");
 			break;
 		default:
-			printf("选择错误\n");
+			printf("閫夋嫨閿欒\n");
 			break;
 		}
 	} while (input);

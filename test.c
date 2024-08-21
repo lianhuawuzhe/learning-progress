@@ -1,0 +1,54 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+int add(int x, int y)
+{
+	return x + y;
+}
+int sub(int x, int y)
+{
+	return x - y;
+}
+int mul(int x, int y)
+{
+	return x * y;
+}
+int div(int x, int y)
+{
+	return x / y;
+}
+//int main()
+//{
+//	int(*pf)(int, int) = add;
+//	int(*arr[4])(int,int) = {add, sub, mul, div};
+//	int i = 0;
+//	for (i = 0; i < 4; i++)
+//	{
+//		int ret=arr[i](8,4);
+//		printf("%d ", ret);
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int(*parr[])(int, int) = { 0,add,sub,mul,div };
+//	int(*(*pparr)[])(int, int) = &parr;
+//	return 0;
+//}
+void bubble_sort(int arr[],int sz)
+{
+
+}
+
+int main()
+{
+	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	bubble_sort(arr,sz);
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", arr[i]);
+	}
+	return 0;
+}

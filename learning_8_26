@@ -104,7 +104,7 @@
 //	char substr[] = "jdj";
 //	char*ret=my_strstr(email, substr);
 //	if (ret == NULL)
-//		printf("×Ó´®²»´æÔÚ");
+//		printf("Ã—Ã“Â´Â®Â²Â»Â´Ã¦Ã”Ãš");
 //	else
 //		printf("%s\n", ret);
 //	return 0;

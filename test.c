@@ -1,0 +1,120 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stddef.h>
+
+//struct s1
+//{
+//	char c1;
+//	int i;
+//	char c2;
+//};
+//struct s2
+//{
+//	char c1;
+//	char c2;
+//	int i;
+//};
+//struct s3
+//{
+//	double d;
+//	char c;
+//	int i;
+//};
+//struct s4
+//{
+//	char c1;
+//	struct s3 S3;
+//	double d;
+//};
+//int main()
+//{
+//	struct s1 S1;
+//	struct s2 S2;
+//	printf("%d\n", offsetof(struct s1, c1));
+//	printf("%d\n", offsetof(struct s1, i));
+//	printf("%d\n", offsetof(struct s1, c2));
+//	printf("%d\n", sizeof(struct s1));
+//	printf("%d\n", sizeof(struct s2));
+//	printf("%d\n", sizeof(struct s3));
+//	printf("%d\n", sizeof(struct s4));
+//	return 0;
+// }
+
+//#pragma pack(4)
+//struct S
+//{
+//	int i;
+//	double d;
+//};
+//#pragma pack()
+//
+//int main()
+//{
+//	printf("%d\n", sizeof(struct S));
+//	return 0;
+//}
+
+//struct s
+//{
+//	int data[1000];
+//	int num;
+//};
+//void print1(struct s ss)
+//{
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("%d ", ss.data[i]);
+//	}
+//	printf("%d ", ss.num);
+//}
+//
+//void print2(struct s* ps)
+//{
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("%d ", ps->data[i]);
+//	}
+//	printf("%d ", ps->num);
+//}
+//int main()
+//{
+//	struct s S={{1,2,3},100 };
+//	print1(S);
+//	print2(&S);
+//	return 0;
+//}
+
+//struct a
+//{
+//	int a : 2;  
+//	int b : 5;
+//	int c :10;
+//	int d : 30;
+//};
+//
+//int main()
+//{
+//	printf("%d", sizeof(struct a));
+//	return 0;
+//}
+
+struct S
+{
+	char a : 3;
+	char b : 4;
+	char c : 5;
+	char d : 4;
+};
+
+int main()
+{
+	struct S s = { 0 };
+	s.a = 10;
+	s.b = 12;
+	s.c = 3;
+	s.d = 4;
+
+	return 0;
+}

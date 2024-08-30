@@ -1,0 +1,5 @@
+﻿  contact.c
+  test.c
+D:\8yue\test_8_30\test_8_30\test.c(23,3): warning C4550: 表达式计算为缺少参数列表的函数
+  正在生成代码...
+  test_8_30.vcxproj -> D:\8yue\test_8_30\x64\Debug\test_8_30.exe

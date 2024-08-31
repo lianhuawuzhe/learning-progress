@@ -1,18 +1,28 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "contact.h"
+
+enum option
+{
+	Exit,
+	Add,
+	Del,
+	Search,
+	Modify,
+	Show,
+	Sort,
+};
 void menu()
 {
 	printf("******************************\n");
 	printf("*****1.add      2.del ********\n");
 	printf("*****3.search   4.modify******\n");
-	printf("*****4.show     5.sort********\n");
+	printf("*****5.show     6.sort********\n");
 	printf("*****0.exit     **************\n");
 	printf("******************************\n");
 }
 
 int main()
 {
-	menu();
 	int input = 0;
 	contact con;
 	initcontact(&con);
@@ -20,30 +30,33 @@ int main()
 
 	do
 	{
-		menu;
+		menu();
+
 		printf("ÇëÑ¡Ôñ£º\n");
 		scanf("%d", &input);
 		switch (input)
 		{
-		case 1:
+		case Add:
 			add(&con);
 			break;
-		case 2:
+		case Del:
 			del(&con);
 			break;
-		case 3:
+		case Search:
 			search(&con);
 			break;
-		case 4:
+		case Modify:
 			modify(&con);
 			break;
-		case 5:
+		case Show:
 			show(&con);
 			break;
-		case 6:
+		case Sort:
 			sort(&con);
 			break;
-		case 0:
+		case Exit:
+			save(&con);
+			destory(&con);
 			printf("ÍË³ö³ÌÐò\n");
 			break;
 		default:

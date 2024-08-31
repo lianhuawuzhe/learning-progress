@@ -2,12 +2,19 @@
 #include<stdio.h>
 #include<string.h>
 #include<assert.h>
+#include<errno.h>
+#include<stdlib.h>
+
 
 #define MAX 100
 #define MAX_NAME 20
 #define MAX_SEX 10
 #define MAX_TELE 12
 #define MAX_ADDR 30
+
+#define default_sz 3
+#define inc_sz 2
+
 typedef struct peoinfo
 {
 	char name[MAX_NAME];
@@ -17,13 +24,25 @@ typedef struct peoinfo
 	char addr[MAX_ADDR];
 }peoinfo;
 
+
+//¾²Ì¬°æ±¾
+//typedef struct contact
+//{
+//	peoinfo data[MAX];
+//	int count;
+//}contact;
+
+
+//¶¯Ì¬°æ±¾
 typedef struct contact
 {
-	peoinfo data[MAX];
+	peoinfo* data;
 	int count;
+	int capacity;
 }contact;
 
-void initcontact(contact* pc);
+
+int initcontact(contact* pc);
 
 void add(contact* pc);
 
@@ -36,3 +55,9 @@ void search(contact* pc);
 void modify(contact* pc);
 
 void sort(contact* pc);
+
+void destory(contact* pc);
+
+void save(const contact* pc);
+
+void load(contact* pc);

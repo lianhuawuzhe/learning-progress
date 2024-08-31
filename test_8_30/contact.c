@@ -1,37 +1,120 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include"contact.h"
 
+//静态版本
+//void initcontact(contact* pc)
+//{
+//	assert(pc);
+//	pc->count = 0;
+//	memset(pc->data, 0, sizeof(pc->data));
+//
+//}
 
-void initcontact(contact* pc)
+
+void checkcapacity(contact* pc)
+{
+	if (pc->count == pc->capacity)
+	{
+		peoinfo* ptr = (peoinfo*)realloc(pc->data, (pc->capacity + inc_sz) * sizeof(peoinfo));
+		if (ptr == NULL)
+		{
+			printf("add:%s\n", strerror(errno));
+			return;
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->capacity += inc_sz;
+			printf("增容成功\n");
+		}
+	}
+
+}
+
+void load(contact* pc)
+{
+	FILE* pfread = fopen("contact.txt", "rb");
+	if (pfread == NULL)
+	{
+		perror("load");
+		return;
+	}
+	peoinfo tmp = { 0 };
+	while (fread(&tmp, sizeof(peoinfo), 1, pfread) == 1)
+	{
+		checkcapacity(pc);
+		pc->data[pc->count] = tmp;
+		pc->count++;
+	}
+
+	fclose(pfread);
+	pfread = NULL;
+}
+
+
+//动态版本
+int initcontact(contact* pc)
 {
 	assert(pc);
 	pc->count = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (peoinfo*)calloc(3 , sizeof(peoinfo));
 
+	if (pc->data == NULL)
+	{
+		printf("initcontact:%s\n", strerror(errno));
+		return 1;
+	}
+	pc->capacity = default_sz;
+	//加载文件信息到通讯录
+	load(pc);
+	return 0;
 }
+
+
+//静态版本
+//void add(contact* pc)//con的地址
+//{
+//	assert(pc);
+//	if (pc->count == MAX)
+//	{
+//		printf("通讯录已满\n");
+//		return;
+//	}
+//	
+//		printf("请输入名字：\n");
+//		scanf("%s", pc->data[pc->count].name);//name数组名就是地址
+//		printf("请输入年龄：\n");
+//		scanf("%d", &(pc->data[pc->count].age));
+//		printf("请输入性别：\n");
+//		scanf("%s", pc->data[pc->count].sex);
+//		printf("请输入电话：\n");
+//		scanf("%s", pc->data[pc->count].tele);
+//		printf("请输入地址：\n");
+//		scanf("%s", pc->data[pc->count].addr);
+//		pc->count++;
+//		printf("增加成功\n");
+//	
+//}
+
+//动态版本
 
 void add(contact* pc)//con的地址
 {
 	assert(pc);
-	if (pc->count == MAX)
-	{
-		printf("通讯录已满\n");
-		return;
-	}
-	
-		printf("请输入名字：\n");
-		scanf("%s", pc->data[pc->count].name);//name数组名就是地址
-		printf("请输入年龄：\n");
-		scanf("%d", &(pc->data[pc->count].age));
-		printf("请输入性别：\n");
-		scanf("%s", pc->data[pc->count].sex);
-		printf("请输入电话：\n");
-		scanf("%s", pc->data[pc->count].tele);
-		printf("请输入地址：\n");
-		scanf("%s", pc->data[pc->count].addr);
-		pc->count++;
-		printf("增加成功\n");
-	
+	checkcapacity(pc);
+	printf("请输入名字：\n");
+	scanf("%s", pc->data[pc->count].name);//name数组名就是地址
+	printf("请输入年龄：\n");
+	scanf("%d", &(pc->data[pc->count].age));
+	printf("请输入性别：\n");
+	scanf("%s", pc->data[pc->count].sex);
+	printf("请输入电话：\n");
+	scanf("%s", pc->data[pc->count].tele);
+	printf("请输入地址：\n");
+	scanf("%s", pc->data[pc->count].addr);
+	pc->count++;
+	printf("增加成功\n");
+
 }
 void show(const contact* pc)
 {
@@ -150,4 +233,32 @@ void sort(contact* pc)
 	printf("按名字排序");
 	qsort(pc->data, pc->count, sizeof(peoinfo), cmp_by_name);//不太懂
 	printf("排序成功\n");
+}
+
+void destory(contact* pc)
+{
+	assert(pc);
+	free(pc->data);
+	pc->data = NULL;
+}
+
+
+void save(const contact* pc)
+{
+	assert(pc);
+	FILE* pfwrite = fopen("contact.txt", "wb");
+	if (pfwrite == NULL)
+	{
+		perror("save");
+		return;
+	}
+	int i = 0;
+	for (i = 0; i < pc->count; i++)
+	{
+		fwrite(pc->data+i, sizeof(peoinfo), 1, pfwrite);
+	}
+
+
+	fclose(pfwrite);
+	pfwrite = NULL;
 }

@@ -1,0 +1,37 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+
+//void change(int x)
+//{
+//	x = 3;
+//}
+//int main()
+//{
+//	int a[2] = { 1,2 };
+//	change(a[0]);
+//	printf("%d", a[0]);
+//	return 0;
+//}
+//int main()
+//{
+//
+//	return 0;
+//}
+int feibo(int x)
+{
+	if (x > 2)
+		return feibo(x - 1) + feibo(x - 2);
+	else
+		return 1;
+}
+int main()
+{
+	int i = 0;
+	for (i - 0; i < 40; i++)
+	{
+		if (i % 4 == 0)
+			printf("\n");
+		printf("%12d", feibo(i + 1));
+	}
+	return 0;
+}

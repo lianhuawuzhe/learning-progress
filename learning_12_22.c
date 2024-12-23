@@ -36,10 +36,10 @@
 //int main()
 //{
 //	int a = 0;
-//	printf("ÇëÊäÈëÒ»¸öÊý£º");
+//	printf("è¯·è¾“å…¥ä¸€ä¸ªæ•°ï¼š");
 //	scanf("%d", &a);
 //	int b = cacu(a);
-//	printf("%dµÄ½×³ËÊÇ%d", a, b);
+//	printf("%dçš„é˜¶ä¹˜æ˜¯%d", a, b);
 //	return 0;
 //}
 
@@ -64,7 +64,7 @@
 
 
 //
-//void sort2(int arr[])//Ñ¡Ôñ·¨1
+//void sort2(int arr[])//é€‰æ‹©æ³•1
 //{
 //	int i, j, t;
 //	for (i = 0; i < 9; i++)
@@ -81,7 +81,7 @@
 //		}
 //	}
 //}
-//void sort2(int* p)//Ñ¡Ôñ·¨2
+//void sort2(int* p)//é€‰æ‹©æ³•2
 //{
 //	int i, j, t;
 //	for (i = 0; i < 9; i++)
@@ -101,11 +101,11 @@
 //int main()
 //{
 //	int arr[10] = { 0 };
-//	printf("ÇëÊäÈëÊ®¸öÊý£º");
+//	printf("è¯·è¾“å…¥åä¸ªæ•°ï¼š");
 //	my_scanf(arr);
 //	
 //	sort2(arr);
-//	printf("ÓÃÃ°ÅÝ·¨µÃµ½µÄÅÅÐòÊÇ£º");
+//	printf("ç”¨å†’æ³¡æ³•å¾—åˆ°çš„æŽ’åºæ˜¯ï¼š");
 //	print(arr);
 //	return 0;
 //}
@@ -121,10 +121,10 @@
 //int main()
 //{
 //	int n = 0;
-//	printf("ÇëÊäÈë½×Êý£º");
+//	printf("è¯·è¾“å…¥é˜¶æ•°ï¼š");
 //	scanf("%d", &n);
 //	int ret=cacu(n);
-//	printf("¹²ÓÐ%dÖÖÌø·¨", ret);
+//	printf("å…±æœ‰%dç§è·³æ³•", ret);
 //	return 0;
 //}
 

@@ -40,7 +40,7 @@
 //int main()
 //{
 //	char item[80] = "";
-//	printf("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
+//	printf("Ã‡Ã«ÃŠÃ¤ÃˆÃ«Ã’Â»Â¸Ã¶Ã—Ã–Â·Ã»Â´Â®Â£Âº");
 //	gets(item);
 //	delnum(item);
 //	printf("%s\n", item);
